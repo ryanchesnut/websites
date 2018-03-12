@@ -1,0 +1,97 @@
+<!-- User Story: I can access all of the portfolio webpage's content just by scrolling.
+
+User Story: I can click different buttons that will take me to the portfolio creator's different social media pages.
+
+User Story: I can see thumbnail images of different projects the portfolio creator has built (if you haven't built any websites before, use placeholders.)
+
+User Story: I navigate to different sections of the webpage by clicking buttons in the navigation. -->
+
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<script src="./js/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+		<script src="./js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>	
+	</head>
+
+  <body>
+	 <div class="jumbotron">
+	
+      <nav class="navbar navbar-expand-lg navbar-custom">
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
+  		<div class="collapse navbar-collapse " id="navbarNav">
+			<div class="container">
+    		<ul class="navbar-nav justify-content-center">
+      			<li class="nav-item1 nav-item">
+					<a class="nav-link enabled" id="nav-1" href="#">Home</a>
+      			</li>
+      			<li class="nav-item2 nav-item">
+        			<a class="nav-link disabled" id="nav-2" href="#">Projects</a>
+      			</li>
+      			<li class="nav-item3 nav-item">
+					<a class="nav-link disabled" id="nav-3" href="#">GitHub</a>
+      			</li>
+      			<li class="nav-item4 nav-item">
+        			<a class="nav-link disabled" id="nav-4" href="#">Resume</a>
+      			</li>
+    		</ul>
+  		</div>
+			</div>
+	  </nav>
+	
+		 <br>
+		<div class="img-container">
+		       <img class="img-fluid main-img" src="https://www.gravatar.com/avatar/bdb3ff0d2fc887345168e63d4b67f190?s=350">
+		 </div>
+
+		 
+    </div>
+	  <br><br><br>
+	  <div class="col-md-12" style="border:1px solid black;">
+	  	
+	  </div>
+
+	  
+	  <script>
+	 	$( ".nav-item1" ).click(function() {
+			greyOut();
+			$( this.firstElementChild ).removeClass("disabled"); 
+			$( this.firstElementChild ).addClass("enabled"); 
+			$( this ).effect( "bounce", "slow" );
+			
+	 	});
+	 	$( ".nav-item2" ).click(function() {
+			greyOut(); 
+			$( this.firstElementChild ).removeClass("disabled"); 
+			$( this.firstElementChild ).addClass("enabled"); 
+  			$( this ).effect( "bounce", "slow" );
+	 	});
+	 	$( ".nav-item3").click(function() {
+			greyOut();
+			$( this.firstElementChild ).removeClass("disabled"); 
+			$( this.firstElementChild ).addClass("enabled"); 
+  			$( this ).effect( "bounce", "slow" );
+	 	});
+		$( ".nav-item4").click(function() {
+			greyOut();
+			$( this.firstElementChild ).removeClass("disabled"); 
+			$( this.firstElementChild ).addClass("enabled"); 
+  			$( this ).effect( "bounce", "slow" );
+	 	});
+		  
+		  var greyOut = function(){
+			 for (i=1; i<=4; i++){
+				$("#nav-" +i).removeClass("enabled"); 
+				 $("#nav-" +i).addClass("disabled"); 
+			}
+		  }
+	  </script>
+  </body>
+</html>
