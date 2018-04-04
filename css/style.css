@@ -1,3 +1,5 @@
+
+
 .jumbotron{
 	background-color: lightgrey;
 	height: 350px;
@@ -18,32 +20,51 @@
 	font-size: 30px; 	
 
 }
-.thumbnail iframe {
-  width: 1440px;
-  height: 900px;
-  transition: all 300ms ease-in-out;
-  pointer-events:none;
-  align-content: center; 
-	border: 1px solid black;
-	text-align: center; 
-	padding: 1px; 
-}
-.thumbnail {
- 	text-align: center; 
-	padding: 1px; 
-  -ms-zoom: 0.25;
-  -moz-transform: scale(0.25);
-  -moz-transform-origin: 0 0;
-  -o-transform: scale(0.25);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.25);
-  -webkit-transform-origin: 0 0;
+
+
+.thumbnail iframe{
+
+  	width: 400%;
+  	height: 1000px;
+	pointer-events:none;
+	opacity: 0;
+  	transition: all 300ms ease-in-out;
+	 -webkit-overflow-scrolling: touch;
+	overflow: hidden !important;
+	-ms-transform: scale(0.25);
+    -moz-transform: scale(0.25);
+    -o-transform: scale(0.25);
+    -webkit-transform: scale(0.25);
+    transform: scale(0.25);
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+	margin:  0 0 -60px 0;
+	cursor: none;
 }
 
+.thumbnail-container {
+	width: 100%; 
+	height: 300px; 
+	margin: 0;
+	padding: 4%;
+	overflow: hidden;
+
+}
+
+iframe{
+
+	overflow: hidden; 
+	pointer-events: none;
+	border: 0 !important;
+	display: block;
+}
 
 .img-container{
 	width: 100%; 
-	height: 200px;
+	height: 100px;
 	align-content: center; 
 }
 
@@ -56,24 +77,24 @@
 	text-align: center; 
 	width: 100%; 
 	float: right;
+	padding:  0 0 0 40%
 }
 .middle-content{
 	height: 50px;
 }
 
-@media only screen and (max-width: 768px) {
-	.social-links{
-		float: left;
-	}
+.page-footer{
+	background-color: color: green; 
 }
 
+
 .fa {
-  padding: 20px;
+  padding: 10px;
   font-size: 30px;
-  width: 50px;
+  width: 40px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 1px 1px;
 }
 
 .fa:hover {
@@ -104,3 +125,46 @@
   background: #007bb5;
   color: white;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+	.social-links{
+		float: left;
+		padding: 0; 
+	}
+	.thumbnail-container {
+		width: 100%; 
+		height: 350px; 
+		margin: 0;
+		padding: 5%;
+
+	}
+	.thumbnail iframe{
+  	width: 400%;
+  	height: 1300px;
+	}
+	.page-footer{
+		margin: 40px 0 40px 0; 
+	}
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+	.nav-link{
+		padding: 0; 
+	}
+	.navbar{
+		font-size: 23px; 
+		font-stretch: extra-expanded; 
+	}
+	.img-container{
+		
+
+	}
+}
+
+
+
