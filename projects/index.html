@@ -1,0 +1,133 @@
+<!-- User Story: I can access all of the portfolio webpage's content just by scrolling.
+
+User Story: I can click different buttons that will take me to the portfolio creator's different social media pages.
+
+User Story: I can see thumbnail images of different projects the portfolio creator has built (if you haven't built any websites before, use placeholders.)
+
+User Story: I navigate to different sections of the webpage by clicking buttons in the navigation. -->
+
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+
+  <body>
+	 <div class="jumbotron">
+      <nav class="navbar navbar-expand-lg navbar-custom">
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="far fa-bars"></span>
+  		</button>
+  		<div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+			<div class="container">
+    		<ul class="navbar-nav justify-content-center">
+      			<li class="nav-item1 nav-item">
+					<a class="nav-link enabled" id="nav-1" href="index.html">Home</a>
+      			</li>
+      			<li class="nav-item2 nav-item">
+        			<a class="nav-link disabled" id="nav-2" href="index.html#projects">Projects</a>
+      			</li>
+      			<li class="nav-item3 nav-item">
+					<a class="nav-link disabled" id="nav-3" href="https://www.github.com/ryanchesnut" target="_blank">GitHub</a>
+      			</li>
+      			<li class="nav-item4 nav-item">
+        			<a class="nav-link disabled" id="nav-4" href="https://www.kickresume.com/cv/ryanjchesnut/" target="_blank">Resume</a>
+      			</li>
+				<li class="nav-item5 nav-item">
+        			<a class="nav-link disabled" id="nav-5" href="https://ryanjchesnut.wordpress.com/blog/" target="_blank">Blog</a>
+      			</li>
+    		</ul>
+  		</div>
+			</div>
+	  </nav>
+		<div class="img-container">
+		       <img class="img-fluid main-img" src="https://www.gravatar.com/avatar/bdb3ff0d2fc887345168e63d4b67f190?s=350">
+		 </div>	 
+    </div>
+	  <a name="projects"></a>
+ 	  <div class ="row" > 
+		<div class="col-lg-4 col-md-4 col-sm-12">
+			<a href="https://codepen.io/ryanchesnut/full/YaPGZK" target="_blank">
+			<div class="thumbnail-container">					
+				<div class="thumbnail">	
+					<iframe src="https://codepen.io/ryanchesnut/full/YaPGZK" frameborder="0" scrolling="no" onload="this.style.opacity = 1">
+					</iframe>
+				</div>
+			</div>
+			</a>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12">
+			<a href="https://ryanjchesnut.wordpress.com" target="_blank">
+			<div class="thumbnail-container container-fluid">
+  				<div class="thumbnail">
+   					<iframe src="https://ryanjchesnut.wordpress.com" frameborder="0" onload="this.style.opacity = 1"></iframe>
+  				</div>
+			</div>
+			</a>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12">
+		<a href="quoteMachine.html" target="_blank">
+			<div class="thumbnail-container">
+			  <div class="thumbnail">
+			   <iframe src="quoteMachine.html" frameborder="0" onload="this.style.opacity = 1"></iframe>
+			  </div>
+			</div>
+		</div>
+	  </div>
+ 	  <div class ="row"> 
+		<div class="col-lg-4 col-md-4 col-sm-12">
+			<div class="thumbnail-container container-fluid" >
+  				<div class="thumbnail img-fluid">
+					<a href="#"><iframe src="https://codepen.io/ryanchesnut/full/YaPGZK" frameborder="0" onload="this.style.opacity = 1"></iframe></a>
+  				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12">
+			<div class="thumbnail-container container-fluid">
+  				<div class="thumbnail img-fluid">
+   					<iframe src="https://ryanjchesnut.wordpress.com" frameborder="0" onload="this.style.opacity = 1"></iframe>
+  				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12">
+			<div class="thumbnail-container container-fluid">
+			  <div class="thumbnail img-fluid">
+			   <iframe src="http://www.iamsacha.nl/" frameborder="0" onload="this.style.opacity = 1"></iframe>
+			  </div>
+			</div>
+		</div>
+	  </div>
+	<footer class="page-footer font-small">
+		<div class="container-fluid text-center text-md-left">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<h5 class="text-uppercase">Contact me</h5>
+					<p><a href="ryanjchesnut@gmail.com">ryanjchesnut@gmail.com</a></p>
+				</div>
+				<div class="col-md-6 col-sm-12 text-center" >
+					<div class="social-links">
+						   <a href="https://www.github.com/ryanchesnut" target="_blank" class="fa fa-github"></a>
+						   <a href="https://ryanjchesnut.wordpress.com/blog/" target="_blank" class="fa fa-wordpress"></a>
+						   <a href="https://codepen.io/ryanchesnut/" target="_blank" class="fa fa-codepen"></a> 
+						   <a href="#" class="fa fa-linkedin"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright text-center">&copy; 2018 Copyright:
+			<a href="http://www.ryanchesnut.com"> ryanchesnut.com </a>
+		</div>
+	</footer>
+
+		<script src="./js/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+		<script src="./js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>	
+	  	<script src="js/effects.js"></script>
+  </body>
+</html>
