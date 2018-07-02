@@ -300,7 +300,7 @@ body {
 }
 
  @media (max-width:384px) {
-    .pull-right{
+    .main-image{
         display: none !important;
     }
 }
@@ -313,7 +313,7 @@ body {
      .p2 {
          font-size: 1.2em;
     }
-    .pull-right{
+    .main-image{
         display: none !important;
     }
 }
@@ -383,7 +383,7 @@ body {
      .row-break{
          display: none;
      }
-    .pull-right{
+    .main-image{
         display: none !important;
     }
     .book-links{
