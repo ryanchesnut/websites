@@ -19,7 +19,7 @@ html, body{
 }
 .main{
     overflow: auto; 
-    min-height: 100%;
+    min-height: 90%;
     padding-bottom: 50px;
 }
 
