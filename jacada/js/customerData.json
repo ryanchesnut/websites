@@ -17,7 +17,7 @@
             "email": "mike@walmart.com"
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "Joe",
             "profilePicture": "joe.jpg",
             "phoneNumber": "888-758-3677",
@@ -25,7 +25,7 @@
             "email": "joe@Texaco.com"
         },
         {
-            "id": 3,
+            "id": 4,
             "name": "John",
             "profilePicture": "john.jpg",
             "phoneNumber": "888-758-3677",
@@ -33,7 +33,15 @@
             "email": "john@target.com"
         },
         {
-            "id": 3,
+            "id": 5,
+            "name": "Sara",
+            "profilePicture": "sara.jpg",
+            "phoneNumber": "888-758-3677",
+            "company": "Publix",
+            "email": "sara@publix.com"
+        },
+        {
+            "id": 6,
             "name": "Paul",
             "profilePicture": "paul.jpg",
             "phoneNumber": "888-758-3677",
