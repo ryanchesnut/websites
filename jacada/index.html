@@ -19,8 +19,8 @@
     <footer></footer>
     
     <script>
+    let data = '';
         (function () {
-            let data = '';
             $.ajax({
                 url: 'js/customerData.json',
                 dataType: 'json',
@@ -53,17 +53,19 @@
                 }
             });
         })();
-        let clicked = true;
+
+        let clicked = [];
+
         $(document).ready(function () {
             $('[id^="button-"]').click(function (event) {
                 let selectedIdNumber = event.target.id[event.target.id.length - 1];
-                if (clicked) {
+                if (clicked[selectedIdNumber] || clicked[selectedIdNumber] == undefined) {
                     $('#info-' + selectedIdNumber).css("display", "block");
-                    clicked = false;
+                    clicked[selectedIdNumber] = false;
                 }
                 else {
                     $('#info-' + selectedIdNumber).css("display", "none");
-                    clicked = true;
+                    clicked[selectedIdNumber] = true;
                 }
             })
         });

@@ -17,6 +17,14 @@
             "email": "mike@walmart.com"
         },
         {
+            "id": 2,
+            "name": "Joe",
+            "profilePicture": "joe.jpg",
+            "phoneNumber": "888-758-3677",
+            "company": "Texaco",
+            "email": "joe@Texaco.com"
+        },
+        {
             "id": 3,
             "name": "John",
             "profilePicture": "john.jpg",
