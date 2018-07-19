@@ -1,0 +1,36 @@
+{
+    "customers": [
+        {
+            "id": 1,
+            "name": "Alex",
+            "profilePicture": "alex.jpg",
+            "phoneNumber": "888-758-3677",
+            "company": "Amazon",
+            "email": "alex@amazon.com"
+        },
+        {
+            "id": 2,
+            "name": "Mike",
+            "profilePicture": "mike.jpg",
+            "phoneNumber": "888-758-3677",
+            "company": "Walmart",
+            "email": "mike@walmart.com"
+        },
+        {
+            "id": 3,
+            "name": "John",
+            "profilePicture": "john.jpg",
+            "phoneNumber": "888-758-3677",
+            "company": "Target",
+            "email": "john@target.com"
+        },
+        {
+            "id": 3,
+            "name": "Paul",
+            "profilePicture": "paul.jpg",
+            "phoneNumber": "888-758-3677",
+            "company": "Sweetwater",
+            "email": "paul@sweetwater.com"
+        }
+    ]
+}
