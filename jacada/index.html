@@ -17,6 +17,7 @@
     </ul>
 
     <footer></footer>
+    
     <script>
         (function () {
             let data = '';
@@ -28,11 +29,11 @@
                     for (var i = 0; i < data.customers.length; i++) {
                         let pic = data.customers[i].profilePicture;
                         let name = data.customers[i].name;
-                        let email = data.customers[i].email; 
-                        let phoneNumber = data.customers[i].phoneNumber; 
-                        let company = data.customers[i].company; 
+                        let email = data.customers[i].email;
+                        let phoneNumber = data.customers[i].phoneNumber;
+                        let company = data.customers[i].company;
                         let html = '<li id="customer-' + i
-                            +'"><div class="customer-container"><div class="profile-pic"><img src=img/'
+                            + '"><div class="customer-container"><div class="profile-pic"><img src=img/'
                             + pic +
                             ' class="w3-card-4" height="70px" ></div> &nbsp;<div class="customer-name">'
                             + name +
@@ -41,29 +42,28 @@
                             + '> About Me </button></div>' +
                             '</div></li>';
                         $('#customers').append($(html));
-                        html = '<div id=info-'+i+
-                              ' style="display:none"><ul><li>'+
-                              'Phone: '+ phoneNumber +
-                              '</li><li>Email: '+ email +
-                              '</li><li>Company: '+ company +
-                             '</li></ul></div>'; 
-                        $('#customer-'+i).append($(html)); 
+                        html = '<div id=info-' + i +
+                            ' style="display:none"><ul><li>' +
+                            'Phone: ' + phoneNumber +
+                            '</li><li>Email: ' + email +
+                            '</li><li>Company: ' + company +
+                            '</li></ul></div>';
+                        $('#customer-' + i).append($(html));
                     }
                 }
             });
         })();
-        let clicked = true; 
-        $(document).ready( function(){
+        let clicked = true;
+        $(document).ready(function () {
             $('[id^="button-"]').click(function (event) {
-                
                 let selectedIdNumber = event.target.id[event.target.id.length - 1];
-                if(clicked){
-                   $('#info-'+ selectedIdNumber).css("display", "block");
-                   clicked = false;  
+                if (clicked) {
+                    $('#info-' + selectedIdNumber).css("display", "block");
+                    clicked = false;
                 }
                 else {
                     $('#info-' + selectedIdNumber).css("display", "none");
-                    clicked = true; 
+                    clicked = true;
                 }
             })
         });
