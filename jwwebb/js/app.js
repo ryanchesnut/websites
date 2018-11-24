@@ -1,31 +1,26 @@
-
 $(function () {
+    'use strict'; 
     var animspeed = 900; // animation speed in milliseconds
+    var textArea = $(".bigtext");
+    var fullHeight = textArea.height() + 20;
+    var hideHeight = Math.ceil(fullHeight / 2.5); 
+    textArea.css('height', hideHeight); 
+    var expand = $('.expand'); 
+    var contract = $('.contract'); 
 
-    var $blockquote = $('.bigtext');
-    var height = $blockquote.height();
-    var mini = $('.bigtext p').eq(0).height() + $('.bigtext p').eq(1).height() + $('.bigtext p').eq(2).height() + $('.bigtext p').eq(2).height();
+    $('.expand').on('click', function (e) {
+        textArea.animate( {
+            'height': fullHeight
+        }, animspeed); 
+        expand.addClass('hide');
+        contract.removeClass('hide');
+    });
 
-    $blockquote.attr('data-fullheight', height + 'px');
-    $blockquote.attr('data-miniheight', mini + 'px');
-    $blockquote.css('height', mini+'px');
-$('.expand').on('click', function (e) {
-    $text = $(this).prev();
-
-    $text.animate({
-        'height': $text.attr('data-fullheight')
-    }, animspeed);
-    $(this).next('.contract').removeClass('hide');
-    $(this).addClass('hide');
-});
-
-$('.contract').on('click', function (e) {
-    $text = $(this).prev().prev();
-
-    $text.animate({
-        'height': $text.attr('data-miniheight')
-    }, animspeed);
-    $(this).prev('.expand').removeClass('hide');
-    $(this).addClass('hide');
-});
+    $('.contract').on('click', function (e) {
+        textArea.animate({
+            'height': hideHeight
+        }, animspeed);
+        contract.addClass('hide');
+        expand.removeClass('hide');
+    });
 });

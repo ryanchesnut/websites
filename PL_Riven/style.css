@@ -1,0 +1,47 @@
+.w-blue{
+    background-color: #4285F4; 
+}
+
+.w-dark-red{
+     background-color: #5C2018; 
+}
+
+.w-red{
+    background-color: #BC4639; 
+}
+
+.w-mid-brown{
+    background-color:#D4A59A;
+}
+
+.w-light-brown{
+    background-color:#F3E0DC;
+}
+body {
+    font-family: 'Bad Script', cursive;
+    background: url('./img/background5.jpg');
+    background-repeat: no-repeat;
+    font-size: 24px;
+    background-position: 0 200px;
+    height: 100%;
+    
+}
+.header{
+	font-size: 45px !important;
+}
+.w3-row img {
+    margin-bottom: -8px
+}
+
+/*font-family: 'Fjalla One', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Bad Script', cursive;
+font-family: 'Shadows Into Light Two', cursive;
+font-family: 'Nothing You Could Do', cursive;
+font-family: 'Kristi', cursive;
+font-family: 'Zeyada', cursive;
+font-family: 'Patrick Hand SC', cursive;
+font-family: 'Antic Didone', serif;
+font-family: 'Felipa', cursive;
+*/

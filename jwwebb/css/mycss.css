@@ -8,6 +8,14 @@
      height: 400px;
      
 }
+.jumbotron-landing {
+     font-family: 'Merriweather', serif;
+     margin-top: -60px;
+     border-radius: 0.3rem;
+     background-image: url(../images/HeaderImage.jpg);
+     height:1280px;
+     
+}
 .bluredBackground{
    background: rgba(31, 28, 28, 0.5);
    height: 352px;
@@ -237,6 +245,7 @@ body {
   display: block;
   overflow: hidden;
   color: #787878;
+  height: auto; 
 }
  
 .expand, .contract {
@@ -267,7 +276,7 @@ body {
     position: absolute;
     top: 20%;
     left: 50%;
-    font-size: 60px;
+    font-size: 40px;
     color: White;
     text-align: center;
     transform: translate(-50%,-50%);
@@ -299,6 +308,11 @@ body {
     
 }
 
+.no-link{
+    color: grey;
+    cursor:not-allowed;
+}
+
  @media (max-width:384px) {
     .main-image{
         display: none !important;
@@ -306,7 +320,6 @@ body {
 }
 
  @media (max-width:320px) {
-
      .p1 {
          font-size: 1.8em;
     }
@@ -318,12 +331,12 @@ body {
     }
 }
 
-
 @media (max-width: 988px){
     .btn-gold{
          font-size: 23px !important; 
-     }
+    }
 }
+
 
 @media (min-width: 767px){
      .navbar-nav {
@@ -334,7 +347,6 @@ body {
          .gray-wolf{
         padding: 0 10% 5% 10%; 
     }
-
 }
 
 @media (max-width:767px) {
@@ -403,4 +415,7 @@ body {
     }
 
 }
+
+
+
 
