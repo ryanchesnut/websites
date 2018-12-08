@@ -1,5 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
+footer{
+    width: 100%; 
+    background-color: #000; 
+    height: 250px;
+}
 .jumbotron {
      font-family: 'Merriweather', serif;
      margin-top: -60px;
@@ -8,14 +13,11 @@
      height: 400px;
      
 }
-.jumbotron-landing {
-     font-family: 'Merriweather', serif;
-     margin-top: -60px;
-     border-radius: 0.3rem;
-     background-image: url(../images/HeaderImage.jpg);
-     height:1280px;
-     
+.divider-line{
+    height: 3px;
+    background: white;
 }
+
 .bluredBackground{
    background: rgba(31, 28, 28, 0.5);
    height: 352px;
@@ -52,6 +54,19 @@
        1px 1px 0 #000;
      margin: 50px 0 55px 50px;
      font-size: 65px;
+}
+
+.landing-title {
+     height: 20px;
+     color:white !important;
+     text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+     margin: 50px 0 100px 0;
+     font-size: 70px;
+    /*  text-shadow: 0px 4px 2px rgba(155, 150, 150, 0.88);*/
 }
 .menu{
       color: #e6e1e1!important;
@@ -312,6 +327,48 @@ body {
     color: grey;
     cursor:not-allowed;
 }
+
+.main-banner{
+    height: 1000px;
+    border: 10px solid black;
+}
+
+.jumbotron-landing {
+    font-family: 'Merriweather', serif;
+    margin-top: -50px;
+    border-radius: 0.3rem;
+    background-image:  linear-gradient(
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15)
+    ),url(../images/HeaderImage.jpg) ;   
+    background-repeat: no-repeat;
+    height: 1390px;
+}
+.jumbotron-landing > .row > .main-banner {
+  width: 100%;
+  color: white;
+
+}
+.jumbotron-landing > .row > .main-banner::before {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+   
+}
+.jumbotron-landing > .row > .main-banner::after {
+  content: "";
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+
+}
+
+.rounded-image{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+
+}
+
 
  @media (max-width:384px) {
     .main-image{

@@ -7,6 +7,7 @@ $(function () {
     textArea.css('height', hideHeight); 
     var expand = $('.expand'); 
     var contract = $('.contract'); 
+    contract.addClass('hide');
 
     $('.expand').on('click', function (e) {
         textArea.animate( {
