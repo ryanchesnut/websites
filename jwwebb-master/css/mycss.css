@@ -21,8 +21,8 @@ img{
 }
 
 .boxSets {
-    margin-bottom: 100px;
-    margin-top: 100px;
+    padding-bottom: 87px;
+    padding-top: 94px;
 }
 
 .jumbotron {
@@ -397,7 +397,7 @@ body {
 .book-links{
     height:60px;
     margin: 5px 0 0 0;
-    padding: 10px 0 0 0;
+    padding: 30px 0 0 0;
     
 }
 
@@ -464,14 +464,22 @@ body {
     .main-image{
         display: none !important;
     }
+
 }
 
 @media (max-width: 988px){
     .btn-gold{
          font-size: 23px !important; 
     }
+
 }
 
+@media (max-width: 768px){
+    .boxSets {
+        padding-bottom: 87px;
+        padding-top: 24px;
+    }
+}
 
 @media (min-width: 767px){
      .navbar-nav {
@@ -482,10 +490,7 @@ body {
          .gray-wolf{
         padding: 0 10% 5% 10%; 
     }
-            .boxSets {
-        margin-bottom: 80px;
-        margin-top: 80px;
-    }
+
 }
 
 @media (max-width:767px) {
@@ -577,5 +582,6 @@ body {
     #buy-now {
         text-align: center;
     }
+
 }
 
