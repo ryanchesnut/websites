@@ -156,7 +156,7 @@ body {
     padding-bottom: 20px;
 }
 .book-description{
-    height: 200px !important;
+    height: 280px !important;
     /*border: 1px solid black;*/
 }
 .navbar-default {
@@ -166,7 +166,7 @@ body {
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
      background-color:white;
      text-align:center;
-}
+}`
  .navbar-nav {
      width: 100%;
      text-align: center;
@@ -471,6 +471,9 @@ body {
     .btn-gold{
          font-size: 23px !important; 
     }
+        .book-description{
+         height: 375px !important; 
+    }
 
 }
 
@@ -555,8 +558,7 @@ body {
     }
     .book-description{
          margin: 10px 10% 10px 10%;
-         height: 175px !important; 
-
+         height: 375px !important; 
     }
 
 }
